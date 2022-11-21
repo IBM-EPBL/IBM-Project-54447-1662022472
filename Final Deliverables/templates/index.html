@@ -1,0 +1,153 @@
+<!-- NAVIGATION MENUS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <style>
+     * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+.footer {
+  background-color: none;
+  text-align: center;
+  padding: 10px;
+}
+li {
+ list-style: none;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+
+.menu li {
+ padding: 5px 14px;
+}
+.services {
+ position: relative;
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+ display: block;
+}
+#example1 {
+  background: url(swim.jpg);
+
+}
+#swim
+{
+   height: 200px;
+  width: 50%;
+}
+
+   </style>
+   <title>Index page</title>
+ </head>
+ <body style="font-family:Montserrat;">
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">VIRTUAL EYE</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+
+       <div class="menu">
+         <li><a href="C:\Users\Admin\Desktop\YOLO\testing/index.html">Home</a></li>
+         <li><a href="C:\Users\Admin\Desktop\YOLO\testing/register.html">Register</a></li>
+         <li><a href="C:\Users\Admin\Desktop\YOLO\testing/login.html">Login</a></li>
+       </div>
+     </ul>
+   </nav>
+   <div class="swim">
+<center>
+     <img style="height:320px; width:1540px"src="C:\Users\Admin\Desktop\YOLO\static/person drowning.jpg">
+</center>     
+   </div>
+<br>
+<h2><center>ABOUT PROJECT </center></h2>
+<div class="row">
+  <div class="column">
+    <h2><center>Problem</center></h2>
+    <p align = "justify"> Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle. Swimming pools are found larger in number in hotels, and weekend tourist spots and barely people have them in their house backyard. Beginners, especially, often feel it difficult to breathe underwater which causes breathing trouble which in turn causes a drowning accident. Worldwide, drowning produces a higher rate of mortality without causing injury to children. Children under six of their age are found to be suffering the highest drowning mortality rates worldwide. Such kinds of deaths account for the third cause of unplanned death globally, with about 1.2  million cases yearly.  
+</p>
+  </div>
+  
+  <div class="column">
+    <h2><center>Solution</center></h2>
+    <p align = "justify">To overcome this conflict, a meticulous system is to be implemented along the swimming pools to save human life. By studying body movement patterns and connecting cameras to artificial intelligence (AI) systems we can devise an underwater pool safety system that reduces the risk of drowning.  Usually, such systems can be developed by installing more than 16 cameras underwater and ceiling and analyzing the video feeds to detect any anomalies. but  AS a POC we make use of one camera that streams the video underwater and analyses the position of swimmers to assess the probability of drowning, if it is higher then an alert will be generated to attract lifeguards' attention.  
+</p>
+  </div>
+<div class="footer">
+<br><br>
+  <p id="copyrights" style="color: #4c9e9e; font-size:15px;"></p>
+
+<script>
+    const d = new Date();
+   document.getElementById("copyrights").innerHTML ="Copyright © "+ d.getFullYear();
+</script>
+</div>
+</body>
+</html>
